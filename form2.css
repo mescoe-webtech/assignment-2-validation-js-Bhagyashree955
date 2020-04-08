@@ -1,0 +1,48 @@
+body
+{
+     background-image: url('background.jpg');
+    background-blend-mode: soft-light;
+    background-size: 100%;
+    color: white;
+
+}
+#div1{
+    margin-top: 25px;
+    background-color: rgba(32, 13, 13, 0.521);
+    color: yellowgreen;
+    text-shadow: 2px 2px 5px green;
+    font-size: 30px;
+    border: solid 0.5px;
+}
+form{
+    margin-top: 15px;
+    border-style: dotted;
+    border-color: azure;
+    border-radius: 2em;
+    mask-border-width: 20px;
+    border-spacing: 20;
+}
+
+.raw
+{
+    margin: 0;
+    font-size: 20px;
+}
+
+label
+{
+    font-size: 15px;
+    margin: 10px;
+}
+
+input[type=text]
+{
+    width: 20%;
+    margin: 8px 0;
+    padding: 7px 10px;
+    cursor: pointer;
+    margin-left: 40px;
+    display: inline-block;
+}
+
+

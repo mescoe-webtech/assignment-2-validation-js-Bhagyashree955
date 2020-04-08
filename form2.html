@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    
+       <head>
+        
+   <title >My Registration Form</title>
+   <link rel="stylesheet" type="text/css" href="form2.css">
+   <script src="form.js"></script>
+       </head>
+    
+    <body>
+    
+        <div id="div1">
+        <h1 align="center"><b>Registration Form</b></h1>
+        </div>
+
+     <form name="Registration" align="center" action="" onsubmit="return  validateform()"  method="get">
+<h3>              
+         
+       <label for="Name">First_Name</label>   
+          <input type="text" id="Name" name="fname"  placeholder="Enter First Name" class="a1"><br><br>
+       <label for="Name">Last_Name</label>   
+         <input type="text" id="n1" name="lname"  placeholder="Enter Last Name" class="a1"><br><br>
+      <label for="email">  Email-id</label>   
+        <input type="text" id="email" name="email"  placeholder="Enter Email id" class="a1"><br><br>
+      <label for="age">Age</label>   
+        <input type="text" id="age" name="Age"  placeholder="Enter age" class="a1"><br>
+     
+
+               
+         Select Gender:<br>
+          <input type="radio" id="male" name="gender" value="male">
+     <label for="male">Male</label><br>
+          <input type="radio" id="female" name="gender" value="female">
+     <label for="female">Female</label><br><br>
+         
+ 
+            Branch:
+     
+         <select id="branch">
+             
+      <option value="Comp">Comp</option>
+      <option value="Mech">Mech</option>
+      <option value="E & TC">E&TC</option>
+         </select><br><br>
+             
+    <button type="submit" value="submit">Submit</button>
+
+
+</h3>
+</form>
+    
+        <script>
+        
+        function validateform()
+            {
+                var f_name = document.forms['Registration']['fname'];
+                var l_name = document.forms['Registration']['lname'];
+                var emailid= document.forms['Registration']['email'];    
+                var age=document.forms['Registration']['Age'];
+            if(f_name.value == "")
+                {
+                    window.alert("Enter your name");
+                    return false;
+                }
+        
+            if(l_name.value == "")
+                {
+                    window.alert("Enter your last name");
+                    return false;
+                }
+        
+           
+            if(emailid.value == "")
+                {
+                    window.alert("Enter email-id");
+                    return false;
+                }
+              
+                  if(age.value == "")
+                    {
+                      window.alert("Enter age");
+                      return false;
+                    }
+        
+                var m=document.getElementById("male");
+                var f=document.getElementById("female");
+                var o=document.getElementById("other");
+            
+             if ((m.checked==false) && (f.checked==false) && (o.checked==false))
+                 
+                 {
+                     alert("choose gender");
+                     return false;
+                }
+            
+                
+            var textarea =document.getElementById("msg");
+            
+            if(textarea.value=="")
+                
+                {
+                    alert("Enter your message");
+                    return false;
+                }
+        
+        }
+                
+     </script>
+</body>
+</html>
